@@ -1,81 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        body{
-            font-family: 'Inter',sans-serif;
-            overflow-x: hidden;
-        }
-      
-        
-         #hero{
-    
-         background: linear-gradient(
-          to bottom,
-          rgba(189, 233, 255, 0.564)30% ,  
-          #ffffff 50%); 
-         } 
-         #about{
-          background: linear-gradient(
-          to top,
-          rgba(189, 233, 255, 0.164)30% ,  
-          #ffffff 50%); 
-         
-        
-         } 
-         #why_us {
-          background: linear-gradient(
-          to bottom,
-          rgba(189, 233, 255, 0.164)30% ,  
-          #ffffff 50%); 
-         }
-         #Testimonial{
-          background: linear-gradient(
-           to bottom,
-           rgba(189, 233, 255, 0.2) 0%,
-           #ffffff 30%,
-           #ffffff 70%,          
-           rgba(189, 233, 255, 0.2) 100%
-);
-         }
-         #cta{
-          background: linear-gradient(
-           to bottom,
-           rgba(189, 233, 255, 0.2) 0%,
-           #ffffff 30%,
-           #ffffff 70%,          
-           rgba(189, 233, 255, 0.2) 100%);
-         }
-         #footer{
-           background: linear-gradient(
-           to bottom,
-           rgba(189, 233, 255, 0.508) 0%,
-           #ffffff 30%,
-           #ffffff 70%,          
-           rgba(189, 233, 255, 0.508) 100%);
-         }
-         
-                          
-                                     
-      h1,
-      h2,
-      h3,
-      h4,
-      li,
-      button {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+  body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
 
+  /* Section Backgrounds */
+  #hero{
+    background: linear-gradient(to bottom, rgba(189, 233, 255, 0.564) 30%, #ffffff 50%);
+  }
+  #about{
+    background: linear-gradient(to top, rgba(189, 233, 255, 0.164) 30%, #ffffff 50%);
+  }
+  #why_us {
+    background: linear-gradient(to bottom, rgba(189, 233, 255, 0.164) 30%, #ffffff 50%);
+  }
+  #Testimonial{
+    background: linear-gradient(to bottom, rgba(189, 233, 255, 0.2) 0%, #ffffff 30%, #ffffff 70%, rgba(189, 233, 255, 0.2) 100%);
+  }
+  #cta{
+    background: linear-gradient(to bottom, rgba(189, 233, 255, 0.2) 0%, #ffffff 30%, #ffffff 70%, rgba(189, 233, 255, 0.2) 100%);
+  }
+  #footer{
+    background: linear-gradient(to bottom, rgba(189, 233, 255, 0.508) 0%, #ffffff 30%, #ffffff 70%, rgba(189, 233, 255, 0.508) 100%);
+  }
+
+  /* Gradient Text */
+  h1, h2, h3, h4, li, button {
     background: linear-gradient(45deg, #6ac7e0, rgb(103, 113, 242));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;  
+    background-clip: text;
   }
   i{
     color: rgba(6, 22, 241, 0.743);
@@ -84,137 +49,84 @@
     background: linear-gradient(45deg, #6ac7e0, rgb(103, 113, 242));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;  
+    background-clip: text;
   }
- 
-
-
   button:hover{
     transition: 0.3s;
     transform: translateY(-3px);
-    box-shadow:  5px 8px 10px  rgba(121, 128, 215, 0.233);
-    
+    box-shadow: 5px 8px 10px rgba(121, 128, 215, 0.233);
   }
-  
-     
-    </style>
-
+</style>
 </head>
 <body>
-    
 
-    <div class="container-fluid bg-light">
-        <div class="container font-fa">
-            <nav class="navbar navbar-expand-md justify-content-between">
-               <!-- <img src="img/logo (2).png" alt="" width="80px"> -->
-                <h4 class="fw-bold fs-4">Dwello</h4>
-               <button class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#main_menu">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-               <div id="main_menu" class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="">home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="">service</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="">contact</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="">support</a></li>
-                </ul>
-               </div>
-               <button type="button" class="btn btn-dark d-none d-md-block px-4">Sign Up</button>
-            </nav>
-        </div>
+<!-- Navbar -->
+<div class="container-fluid bg-light">
+  <div class="container">
+    <nav class="navbar navbar-expand-md justify-content-between">
+      <h4 class="fw-bold fs-4">Dwello</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="main_menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Service</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Support</a></li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-dark d-none d-md-block px-4">Sign Up</button>
+    </nav>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+        <h1 class="display-3 fw-bold mb-3 mt-3 mt-md-5">Find Your Dream Home</h1>
+        <p class="fw-semibold text-muted w-100 w-md-75 mx-auto mx-md-0">Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
+        <button class="btn btn-dark mt-2 mt-md-3 mt-lg-5 px-5 py-2 d-block mx-auto mx-md-0">Sign Up</button>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 text-center">
+        <img class="img-fluid" src="img/house_1.png" alt="house jpg">
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- hero section -->
-
-    <section id="hero"  >
-        <div class="container" id="hero_contain">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-2  order-md-1 ">
-                    <h1 class="display-3
-                    fw-bold     mb-3   pt-md-5  mt-md-5    mb-lg-5     mt-3  d-block mx-auto mx-md-0   text-center text-md-start">Find Your Dream Home</h1>
-                    <p class=" fw-semibold text-muted w-75 text-center text-md-start  d-block mx-auto mx-md-0 "
-                    >Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
-                    <button type="button" class="btn btn-dark  mt-2 mt-md-3 mt-lg-5 px-5 py-2   d-block mx-auto mx-md-0">Sign Up</button>
-                </div>
-                <div class="col-md-6  order-1  order-md-2">
-                    <img class="img-fluid" src="img/house_1.png" alt="house jpg">
-                   
-                   
-                   
-                </div>
-            </div>
-        </div>
-    </section>
-
-     
-    
-
+<!-- Search Filter -->
 <div class="container p-3 py-md-2">
-    
-<div class="row">
-  <div class="col-10 mx-auto">
-    <div class="p-4 shadow rounded-1" style="background-color: rgba(189, 233, 255, 0.364); position: relative; z-index: 10; ">
-      
-      <div class="row g-3 align-items-center">
-        <div class="col-md-3">
-          <input type="text" class="form-control" placeholder="Location">
-        </div>
-        <div class="col-md-3">
-          <input type="text" class="form-control" placeholder="Type">
-        </div>
-        <div class="col-md-3">
-          <input type="text" class="form-control" placeholder="Price Range">
-        </div>
-        <div class="col-md-3">
-          <button class="btn btn-dark w-100 px-lg-4">Sign up</button>
+  <div class="row">
+    <div class="col-12 col-md-10 mx-auto">
+      <div class="p-4 shadow rounded-1" style="background-color: rgba(189, 233, 255, 0.364);">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-md-3">
+            <input type="text" class="form-control" placeholder="Location">
+          </div>
+          <div class="col-12 col-md-3">
+            <input type="text" class="form-control" placeholder="Type">
+          </div>
+          <div class="col-12 col-md-3">
+            <input type="text" class="form-control" placeholder="Price Range">
+          </div>
+          <div class="col-12 col-md-3">
+            <button class="btn btn-dark w-100">Sign up</button>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
-</div>
 
+<!-- About Section -->
 
-<!-- about section -->
-
-<!-- 
-       <section id="about">
-        <div class="container mt-md-5 mt-3 mb-0 pb-3">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6">
-              <img class="img-fluid rounded " src="img/bs2.png" alt="picture">
-            </div>
-            <div class="col-md-6">
-              <h2 class="fw-bold  display-5  mb-2 mt-4 mb-md-4 ">We Help You To Find Your Dream Home</h2>
-              <p class="fw-semibold lh-4  pt-2  w-100 ">From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality</p>
-              <div class="row pt-3 pt-md-4">
-                <div class="col text-center">
-                 <h2 class="fw-bold display-6">8k+</h2>
-                 <p class="fw-semibold">Houses Available</p>
-                </div>
-                <div class="col text-center">
-                 <h2 class="fw-bold display-6">6k+</h2>
-                 <p class="fw-semibold">Houses Sold</p>
-                </div>
-                <div class="col text-center">
-                 <h2 class="fw-bold display-6">10k+</h2>
-                 <p class="fw-semibold">Trusted Agents</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       </section> -->
-
-
-        <section id="about">
+   <section id="about">
   <div class="container mt-md-5 mt-3 pb-3">
 
-     
+    <!-- 🔹 MD (tablet only) layout -->
      <div class="d-none d-md-block d-lg-none">
       <h2 class="fw-bold display-5 mb-3 text-center">
         We Help You To Find Your Dream Home
@@ -222,20 +134,20 @@
 
       <img class="img-fluid rounded mx-auto d-block mb-3" src="img/bs2.png" alt="picture">
 
-      <p class="fw-semibold lh-4 text-center">
+      <p class="fw-semibold lh-4 text-center"> 
          From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality
       </p>
     </div> 
 
     
-     <div class="row align-items-center d-md-none d-lg-flex">  
+    <div class="row align-items-center d-md-none d-lg-flex">  
 
-      
-       <div class="col-12 col-lg-6">
+      <!-- IMAGE -->
+      <div class="col-12 col-lg-6">
         <img class="img-fluid rounded mx-auto d-block" src="img/bs2.png" alt="picture">
       </div> 
 
-      
+      <!-- TEXT -->
       <div class="col-12 col-lg-6">
         <h2 class="fw-bold display-5 mb-3 mt-4 mt-lg-0">
           We Help You To Find Your Dream Home
@@ -265,68 +177,55 @@
 
   </div>
 </section>  
-  
-       <!-- why us -->
-  
 
 
-<section id="why_us" class="pt-5">
-  <div class="container pt-3">
+
+<!-- Why Us Section -->
+<section id="why_us" class="pt-5 pb-5">
+  <div class="container">
     <h3 class="fw-bold display-6 text-center">Why Choose Us</h3>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
-        <p class="text-center fw-semibold lh-base pt-3">
-          Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched Personalized Service
-        </p>
-      </div>
-    </div>
-
-    <div class="row g-4 pt-4">
-
+    <p class="text-center fw-semibold lh-base pt-3 mb-4">Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched Personalized Service</p>
+    <div class="row g-4">
       <div class="col-12 col-md-6 col-lg-3">
         <div class="p-4 rounded-4 shadow-sm h-100" style="background-color: rgba(189, 233, 255, 0.364);">
           <i class="bi bi-geo-alt-fill fs-3 text-primary"></i>
           <h5 class="fw-bold mt-2">Expert Guidance</h5>
-          <p class="mb-0">Benefit from our team's seasoned expertise for a smooth buying experience</p>
+          <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-3">
         <div class="p-4 rounded-4 shadow-sm h-100" style="background-color: rgba(189, 233, 255, 0.364);">
           <i class="bi bi-person-check-fill fs-3 text-primary"></i>
           <h5 class="fw-bold mt-2">Personalized Service</h5>
-          <p class="mb-0">We provide tailored solutions that fit your specific housing needs.</p>
+          <p>We provide tailored solutions that fit your specific housing needs.</p>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-3">
         <div class="p-4 rounded-4 shadow-sm h-100" style="background-color: rgba(189, 233, 255, 0.364);">
           <i class="bi bi-card-list fs-3 text-primary"></i>
           <h5 class="fw-bold mt-2">Transparent Process</h5>
-          <p class="mb-0">Stay informed with our clear and honest approach to buying your home</p>
+          <p>Stay informed with our clear and honest approach to buying your home</p>
         </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="p-4 rounded-4 shadow-sm  h-100" style="background-color: rgba(189, 233, 255, 0.364);">
+        <div class="p-4 rounded-4 shadow-sm h-100" style="background-color: rgba(189, 233, 255, 0.364);">
           <i class="bi bi-hand-thumbs-up-fill fs-3 text-primary"></i>
           <h5 class="fw-bold mt-2">Exceptional Support</h5>
-          <p class="mb-0">Providing peace of mind with our responsive and attentive customer service</p>
+          <p>Providing peace of mind with our responsive and attentive customer service</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 
+
+    <!-- our residence -->
+
+
+
+
     
-
-<!-- our residence -->
-
-
-
-
 
 <section id="residence " class="pt-5">
   <div class="container pt-5">
@@ -444,13 +343,14 @@
 </div>
 </section>
 
+  
+
+        <!-- Testimonial -->
 
 
-
-   <!-- Testimonial -->
-
-
-  <section id="Testimonial" class="pt-5  pb-5">
+         
+<!--  
+   <section id="Testimonial" class="pt-5  pb-5">
     <div class="container pt-3 ">
         <h2 class="text-center display-6 fw-bold   ">What People Say About Dwello</h2>
 
@@ -463,12 +363,12 @@
           <div class="card-body">
             <div class="d-flex align-items-center">
               <img class="img-fluid me-3 " src="img/ts_pro1.png" alt="">
-              <div class="me-5">
+              <div class="me-5 pe-5">
                 <h5>Sarah Nguyen</h5>
                 <p>San Francisco</p>
               </div>
 
-              <div class="ms-3">
+              <div class="">
                 <div class="bg-white px-2 py-1 rounded-2 shadow-sm d-flex     align-items-center   gap-1">
                  <i class="bi bi-star-fill" ></i>
                  <span class="fw-bold text-dark">5.0</span>
@@ -490,12 +390,12 @@
           <div class="card-body">
              <div class="d-flex align-items-center">
               <img class="img-fluid me-3 " src="img/ts_pro2.png" alt="">
-              <div class="me-5">
+              <div class="me-5 pe-2">
                 <h5>Michael Rodriguez</h5>
                 <p>San Diego</p>
               </div>
 
-              <div class="ms-3">
+              <div class="">
                 <div class="bg-white px-2 py-1 rounded-2 shadow-sm d-flex     align-items-center   gap-1">
                  <i class="bi bi-star-fill" ></i>
                  <span class="fw-bold text-dark">4.5</span>
@@ -516,12 +416,12 @@
           <div class="card-body">
              <div class="d-flex align-items-center">
               <img class="img-fluid me-3 " src="img/ts_pro3.png" alt="">
-              <div class="me-5">
+              <div class="me-5 pe-5">
                 <h5>Emily Johnson</h5>
                 <p>Los Angeles</p>
               </div>
 
-              <div class="ms-3">
+              <div class="">
                 <div class="bg-white px-2 py-1 rounded-2 shadow-sm d-flex     align-items-center   gap-1">
                  <i class="bi bi-star-fill" ></i>
                  <span class="fw-bold text-dark">5.0</span>
@@ -548,13 +448,13 @@
 
 </button>
     </div>
-   </section> 
-
-
-    <!-- cta section -->
+   </section> -->
 
 
 
+
+         <!-- cta section -->
+ 
 
     <section id="cta" class="pt-5 pb-5 ">
       <div class="container">
@@ -581,11 +481,11 @@
 
 
 
-     <!-- footer -->
+        
+        <!-- footer -->
 
 
-
-     <section id="footer" class="py-5" >
+      <section id="footer" class="py-5" >
       <div class="container">
         <div class="row mt-5" >
           <div class="col-7 col-md-4 mb-4">
@@ -609,7 +509,7 @@
              <a class="d-block text-decoration-none mb-0  mb-md-2" href="#">Terms of Service</a> 
                  
           </div>
-          <div class="col-4  col-md-3  col-lg-2 mb-4 ">
+          <div class="col-4  col-md-  col-lg-2 mb-4 ">
             <h5 class="fw-bold mb-3 ">Our Social</h5>
               <a class="text-decoration-none d-block mb-0  mb-md-2" href="#"><i class="bi bi-instagram me-2 "></i>instagram</a>
               <a class="text-decoration-none d-block mb-0  mb-md-2" href="#"><i class="bi bi-twitter-x me-2 "></i>twitter</a>
@@ -627,6 +527,12 @@
       </div>
      </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
